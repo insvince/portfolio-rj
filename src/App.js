@@ -1,10 +1,13 @@
-import GlobalStyle from "./resource/assets/GlobalStyle/";
+import Header from "./Components/Header";
+import Section from "./Components/Section";
+import "./App.scss";
 
 function App() {
   return (
-    <GlobalStyle>
-      <div className="App"></div>
-    </GlobalStyle>
+    <div className="min-h-[300vh]">
+      <Header />
+      <Section />
+    </div>
   );
 }
 
