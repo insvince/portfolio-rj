@@ -4,7 +4,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import 'typed';
 
 * {
     // font-family: 'Open Sans', sans-serif;
@@ -15,4 +15,10 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.typing {
+    @include typed("I'm Huy (Cabbage), Front-End Developer",
+        1.5,
+        (caret-width: 2px, caret-space: 2px));
 }
