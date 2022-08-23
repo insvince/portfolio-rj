@@ -1,7 +1,7 @@
 function Skill({ url, name, percent }) {
   return (
     <div className="flex justify-start items-center mt-12">
-      <img className="w-12 mr-5" src={url} alt={name} />
+      <img className="w-9 mr-5" src={url} alt={name} />
       <span className="text-xl font-semibold uppercase mr-5 w-[150px]">
         {name}
       </span>
