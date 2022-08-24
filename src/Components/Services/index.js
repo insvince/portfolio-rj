@@ -7,7 +7,7 @@ function Services() {
       className="flex justify-center relative h-[650px] pointer-events-none select-none"
       id="services"
     >
-      <div className="absolute text-7xl font-bold top-[50%] z-1">
+      <div className="absolute text-7xl font-bold top-[50%] z-10">
         Coming Soon
       </div>
       <div className="w-3/4 ">
