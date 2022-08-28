@@ -4,7 +4,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 function Services() {
   return (
     <div
-      className="flex justify-center relative h-[650px] pointer-events-none select-none"
+      className="flex justify-center relative h-[650px] pointer-events-none select-none animate-translateY"
       id="services"
     >
       <div className="absolute text-7xl font-bold top-[50%] z-10">

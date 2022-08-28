@@ -1,29 +1,31 @@
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { useState } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faMoon } from "@fortawesome/free-regular-svg-icons";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
+// import { faMoon } from "@fortawesome/free-regular-svg-icons";
+// import { faSun } from "@fortawesome/free-solid-svg-icons";
 
 const Item = ({ title, url }) => {
   return (
-    <li className="mx-3 p-2 hover:text-blue-500 ease-in duration-300">
+    <li className="mx-3 p-2  ease-out hover:scale-125 hover:translate-y-4 duration-500">
       <a href={url}>{title}</a>
     </li>
   );
 };
 
 function Header() {
-  const [dark, setDark] = useState(true);
+  /*  const [dark, setDark] = useState(true);
 
   const handleClick = () => {
     dark ? setDark(false) : setDark(true);
-  };
+  }; */
 
   return (
     <div className="flex justify-center h-[100px] mb-10">
       <div className="flex justify-between items-center w-[80%] font-bold text-lg">
-        <span className="hover:text-blue-500 cursor-pointer">
-          <a href="#">Cabbage</a>
+        <span className="hover:scale-125 hover:translate-y-4 duration-500 cursor-pointer">
+          <a href="" className="">
+            Cabbage
+          </a>
         </span>
 
         <ul className="flex list-none">
@@ -34,9 +36,9 @@ function Header() {
           <Item url="#services" title="Services" />
           <Item url="#contact" title="Contact" />
 
-          <li className="mx-3 p-2 cursor-pointer icon" onClick={handleClick}>
+          {/*  <li className="mx-3 p-2 cursor-pointer icon" onClick={handleClick}>
             <FontAwesomeIcon icon={dark ? faSun : faMoon} />
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

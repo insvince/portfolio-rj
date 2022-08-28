@@ -32,11 +32,11 @@ const ContactUs = () => {
 
   return (
     <form
-      className="flex justify-center items-center w-3/5 "
+      className="flex justify-center items-center w-3/5"
       ref={form}
       onSubmit={sendEmail}
     >
-      <div className="flex flex-col justify-center items-start w-4/5 ">
+      <div className="flex flex-col justify-center items-start w-4/5 animate-translateXReverse ">
         <div className=" mt-5  font-semibold text-left w-full">
           <input
             className="text-black w-full p-3 pl-3  rounded-lg "

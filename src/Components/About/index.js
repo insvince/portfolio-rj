@@ -1,33 +1,35 @@
 function About() {
   return (
-    <div className="flex justify-center p-5  h-[600px]" id="about">
-      <div className="flex justify-center w-4/5">
+    <div className="flex justify-center p-5  h-[600px] " id="about">
+      <div className="flex justify-center w-4/5 animate-translateX">
         <div className="flex flex-col justify-center w-2/4 ">
           <h2 className="text-4xl font-bold text-center underline">About me</h2>
 
           <div className="ml-5 text-lg tracking-wide ">
             <p className="mt-12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quis
-              ut optio inventore possimus odio!
+              - Learn, accumulate more experience, knowledge, and practice
+              skills to increase accuracy
             </p>
             <p className="mt-12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quis
-              ut optio inventore possimus odio!
+              - Provide the most satisfactory value for the company and
+              customers.
             </p>
             <p className="mt-12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quis
-              ut optio inventore possimus odio!
+              - Always try to improve my level to become an excellent employee
+              in my field.
+            </p>
+            <p className="mt-12">
+              - Have a stable job that provides me the capability to learn new
+              things, technologies, and skills to achieve any task the company
+              assigns to me or I have the chance to work on
             </p>
           </div>
         </div>
 
-        <div className="flex justify-center items-center w-2/4">
+        <div className="flex justify-center items-center w-2/4 animate-translateXReverse">
           <img
-            className="h-[450px] rounded-tr-3xl rounded-bl-3xl"
-            src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/273386801_3032258283692267_5998129513702782404_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=Wwii79yVgy4AX9KRLiH&_nc_ht=scontent.fsgn5-11.fna&oh=00_AT_U-HSXoEglssQadW4v8n2HplkoIVY5rwp_yuROB5aLxw&oe=6304F87E"
+            className="h-[450px] "
+            src="./portfolio-rj/assets/images/me-reverse.png"
             alt="myself"
           />
         </div>

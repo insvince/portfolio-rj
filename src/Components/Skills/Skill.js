@@ -5,9 +5,9 @@ function Skill({ url, name, percent }) {
       <span className="text-xl font-semibold uppercase mr-5 w-[150px]">
         {name}
       </span>
-      <div className="flex items-center h-2 rounded-md border-solid border-2 border-indigo-600 w-full mr-5">
+      <div className="flex items-center h-2 rounded-md border-solid border-2 border-indigo-600 w-full mr-5 overflow-hidden">
         <div
-          className="percent h-2 bg-gradient-to-l from-blue-600 to-indigo-400 border-none rounded-md"
+          className="percent h-2 bg-gradient-to-l from-blue-600 to-indigo-400 border-none rounded-md animate-progess hover:animate-progessRunning "
           style={{ width: percent + "%" }}
         />
       </div>
