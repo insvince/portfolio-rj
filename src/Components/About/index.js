@@ -29,7 +29,7 @@ function About() {
         <div className="flex justify-center items-center w-2/4 animate-translateXReverse">
           <img
             className="h-[450px] "
-            src="./portfolio-rj/assets/images/me-reverse.png"
+            src="./assets/images/me-reverse.png"
             alt="myself"
           />
         </div>

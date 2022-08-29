@@ -12,19 +12,11 @@ import "./App.scss";
 import { useEffect } from "react";
 
 function App() {
-  const handleScroll = () => {
-    window.addEventListener("scroll", () => {
-      //   console.log(e);
-      console.log("qweqwe");
-    });
-  };
 
   return (
     <div
       className="min-h-[300vh] bg-gradient-to-br to-sky-900 from-sky-800 
      text-white"
-      //   onWheel={handleScroll}
-      onScroll={handleScroll}
     >
       <Header />
       <Section />

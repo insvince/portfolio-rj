@@ -43,7 +43,7 @@ function Section() {
           <div className="w-2/5 flex justify-center overflow-hidden">
             <img
               className="h-[300px] hover:scale-110 duration-500 animate-swiming animate-flash"
-              src="./portfolio-rj/assets/images/me2.png"
+              src="./assets/images/me2.png"
               alt="myself"
             />
           </div>

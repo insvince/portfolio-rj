@@ -14,7 +14,7 @@ function Github() {
             name="Portfolio Personal"
             language="React, TailwindCSS"
             description="Presenting personal information with the website interface is close, friendly to my employers as well as customers."
-            img="./portfolio-rj/assets/images/portfolio-rj.png"
+            img="./assets/images/portfolio-rj.png"
           />
 
           <Card
@@ -23,7 +23,7 @@ function Github() {
             name="Music Player"
             language="React, TailwindCSS, JSON"
             description="Online music player application on web browser. Includes functions such as: play music, select song, stop, next song, random song,..."
-            img="./portfolio-rj/assets/images/music-player.png"
+            img="./assets/images/music-player.png"
           />
 
           {/*  <Card
