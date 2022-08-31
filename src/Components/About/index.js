@@ -1,7 +1,15 @@
-function About() {
+function About({ status, idComponent }) {
+  console.log(status.animate === "true");
   return (
-    <div className="flex justify-center p-5  h-[600px] " id="about">
-      <div className="flex justify-center w-4/5 animate-translateX">
+    <div
+      className="reveal flex justify-center p-5  h-[600px] "
+      id={idComponent}
+    >
+      <div
+        className={` justify-center w-4/5 ${
+          status.animate == "true" ? "flex animate-translateX" : "hidden"
+        }`}
+      >
         <div className="flex flex-col justify-center w-2/4 ">
           <h2 className="text-4xl font-bold text-center underline">About me</h2>
 
@@ -26,7 +34,13 @@ function About() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center w-2/4 animate-translateXReverse">
+        <div
+          className={`flex justify-center items-center w-2/4 ${
+            status.animate == "true"
+              ? "flex animate-translateXReverse"
+              : "hidden"
+          } `}
+        >
           <img
             className="h-[450px] "
             src="./assets/images/me-reverse.png"

@@ -1,4 +1,4 @@
-function Skill({ url, name, percent }) {
+function Skill({ url, name, percent, status }) {
   return (
     <div className="flex justify-start items-center mt-12">
       <img className="w-9 mr-5" src={url} alt={name} />
@@ -7,7 +7,9 @@ function Skill({ url, name, percent }) {
       </span>
       <div className="flex items-center h-2 rounded-md border-solid border-2 border-indigo-600 w-full mr-5 overflow-hidden">
         <div
-          className="percent h-2 bg-gradient-to-l from-blue-600 to-indigo-400 border-none rounded-md animate-progess hover:animate-progessRunning "
+          className={`percent h-2 bg-gradient-to-l from-blue-600 to-indigo-400 border-none rounded-md ${
+            status === "true" && "animate-progess"
+          }`}
           style={{ width: percent + "%" }}
         />
       </div>

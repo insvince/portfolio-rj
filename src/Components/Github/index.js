@@ -1,8 +1,8 @@
 import Card from "./Card";
 
-function Github() {
+function Github({ status, idComponent }) {
   return (
-    <div className="flex justify-center min-h-[750px] " id="github">
+    <div className="reveal flex justify-center min-h-[750px] " id={idComponent}>
       <div className="w-3/4">
         <h2 className="text-4xl font-bold underline text-center mb-12 mt-5">
           Github
@@ -15,6 +15,7 @@ function Github() {
             language="React, TailwindCSS"
             description="Presenting personal information with the website interface is close, friendly to my employers as well as customers."
             img="./assets/images/portfolio-rj.png"
+            status={status.animate}
           />
 
           <Card
@@ -24,6 +25,7 @@ function Github() {
             language="React, TailwindCSS, JSON"
             description="Online music player application on web browser. Includes functions such as: play music, select song, stop, next song, random song,..."
             img="./assets/images/music-player.png"
+            status={status.animate}
           />
 
           {/*  <Card

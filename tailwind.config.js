@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        translateX: "translateX 1.5s ease",
-        translateXReverse: "translateXReverse 1.5s ease",
-        translateY: "translateY 1.5s ease",
-        translateYReverse: "translateYReverse 1.5s ease",
-        swiming: "swiming 8s linear infinite",
-        flash: "flash 1s ease-in",
-        progess: "progess 1s ease-out",
+        translateX: "translateX 2s ease",
+        translateXReverse: "translateXReverse 2s ease",
+        translateY: "translateY 2s ease",
+        translateYReverse: "translateYReverse 2s ease",
+        swimming: "swimming 8s linear infinite",
+        flash: "flash 2s ease-in-out",
+        progess: "progess 2s ease-in-out",
       },
       keyframes: {
         translateX: {
@@ -23,7 +23,7 @@ module.exports = {
           "50%": { transform: "translateX(-40px) ", opacity: 0.4 },
           "100%": { transform: "translateX(0px)", opacity: 1 },
         },
-        swiming: {
+        swimming: {
           "0%": { transform: "translateX(10px)" },
           "25%": { transform: "translateX(15px) translateY(-5px)" },
           "50%": {

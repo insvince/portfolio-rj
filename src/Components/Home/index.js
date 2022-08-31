@@ -7,34 +7,38 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Section() {
+function Home() {
   return (
-    <div
-      className="flex justify-center relative h-[550px] "
-      id="home"
-      onScroll={(e) => console.log(e)}
-    >
+    <div className="reveal flex justify-center relative h-[550px]" id="home">
       <div className="flex justify-evenly items-center w-4/5">
-        <ul className="w-1/10 text-3xl mx-4 animate-translateX">
+        <ul className="w-1/10 text-3xl mx-4  animate-translateX">
           <li className="my-5 cursor-pointer hover:scale-110 duration-500 hover:-translate-x-4">
-            <a href="https://github.com/git-cabbage" target="_blank">
+            <a
+              href="https://github.com/git-cabbage"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
 
           <li className="my-5 cursor-pointer hover:scale-110 duration-500 hover:-translate-x-4">
-            <a href="https://www.facebook.com/fb.cabbage" target="_blank">
+            <a
+              href="https://www.facebook.com/fb.cabbage"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faFacebook} />
             </a>
           </li>
 
           <li className="my-5 cursor-pointer hover:scale-110 duration-500 hover:-translate-x-4">
-            <a href="">
+            <a href="/" rel="noreferrer">
               <FontAwesomeIcon icon={faTwitter} />
             </a>
           </li>
           <li className="my-5 cursor-pointer hover:scale-110 duration-500 hover:-translate-x-4">
-            <a href="">
+            <a href="/" rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
@@ -42,13 +46,16 @@ function Section() {
         <div className="flex justify-around items-center flex-1 ">
           <div className="w-2/5 flex justify-center overflow-hidden">
             <img
-              className="h-[300px] hover:scale-110 duration-500 animate-swiming animate-flash"
+              className="h-[300px] hover:scale-110 duration-500 animate-swimming animate-flash"
               src="./assets/images/me2.png"
               alt="myself"
             />
           </div>
           <div className="w-3/5 flex flex-col justify-center items-center  animate-translateXReverse">
-            <h1 className="typing text-4xl font-bold mb-5 h-[80px] w-[460px]" />
+            <h1
+              className="typing text-4xl font-bold mb-5 h-[80px] w-[460px]"
+              aria-hidden="true"
+            />
             <p className="mt-5 w-[460px] text-lg">
               - I like to learn new technologies and love the Javascript
               language.
@@ -71,4 +78,4 @@ function Section() {
   );
 }
 
-export default Section;
+export default Home;

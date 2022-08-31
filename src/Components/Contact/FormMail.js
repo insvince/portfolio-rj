@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const ContactUs = () => {
+const ContactUs = ({ status }) => {
   const form = useRef();
 
   const resultText = (text) => {
@@ -36,7 +36,11 @@ const ContactUs = () => {
       ref={form}
       onSubmit={sendEmail}
     >
-      <div className="flex flex-col justify-center items-start w-4/5 animate-translateXReverse ">
+      <div
+        className={`flex flex-col justify-center items-start w-4/5 ${
+          status === "true" && "animate-translateXReverse"
+        }`}
+      >
         <div className=" mt-5  font-semibold text-left w-full">
           <input
             className="text-black w-full p-3 pl-3  rounded-lg "

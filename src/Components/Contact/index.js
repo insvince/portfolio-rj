@@ -8,15 +8,19 @@ import {
 
 import ContactUs from "./FormMail";
 
-function Contact() {
+function Contact({ status, idComponent }) {
   return (
-    <div className="flex justify-center h-[700px] p-12" id="contact">
+    <div className=" reveal flex justify-center h-[700px] p-12" id="contact">
       <div className="w-3/4 ">
         <h2 className="text-4xl font-bold underline text-center mb-12">
           Contact
         </h2>
         <div className="flex justify-between items-start">
-          <div className="w-2/5 animate-translateX">
+          <div
+            className={`w-2/5  ${
+              status.animate === "true" && "animate-translateX"
+            }`}
+          >
             <h2 className=" text-2xl font-bold ">Get in touch</h2>
             <div className="mt-5">
               Please fill in the information and I'll reply to your message as
@@ -26,14 +30,16 @@ function Contact() {
               <div>
                 <FontAwesomeIcon icon={faPhone} />
                 <span className="font-semibold text-lg ml-5">
-                  <a href="tel:+84354449276">0354449276</a>
+                  <a href="tel:+84354449276" rel="noreferrer">
+                    0354449276
+                  </a>
                 </span>
               </div>
               <div>
                 <FontAwesomeIcon icon={faEnvelope} />
 
                 <span className="font-semibold text-lg ml-5">
-                  <a href="mailto:phuochuy1328@gmail.com">
+                  <a href="mailto:phuochuy1328@gmail.com" rel="noreferrer">
                     phuochuy1328@gmail.com
                   </a>
                 </span>
@@ -51,7 +57,7 @@ function Contact() {
             </div>
           </div>
 
-          <ContactUs />
+          <ContactUs status={status.animate} />
         </div>
       </div>
     </div>

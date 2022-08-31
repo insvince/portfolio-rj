@@ -1,10 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
-function Services() {
+function Services({ status, idComponent }) {
   return (
     <div
-      className="flex justify-center relative h-[650px] pointer-events-none select-none animate-translateY"
+      className={`reveal flex justify-center relative h-[650px] pointer-events-none select-none ${
+        status.animate === "true" && "animate-translateY"
+      }`}
       id="services"
     >
       <div className="absolute text-7xl font-bold top-[50%] z-10">
