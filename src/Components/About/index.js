@@ -7,7 +7,7 @@ function About({ status, idComponent }) {
     >
       <div
         className={` justify-center w-4/5 ${
-          status.animate == "true" ? "flex animate-translateX" : "hidden"
+          status.animate === "true" ? "flex animate-translateX" : "hidden"
         }`}
       >
         <div className="flex flex-col justify-center w-2/4 ">
@@ -36,7 +36,7 @@ function About({ status, idComponent }) {
 
         <div
           className={`flex justify-center items-center w-2/4 ${
-            status.animate == "true"
+            status.animate === "true"
               ? "flex animate-translateXReverse"
               : "hidden"
           } `}
