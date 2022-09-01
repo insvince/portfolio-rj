@@ -2,7 +2,7 @@ function About({ status, idComponent }) {
   console.log(status.animate === "true");
   return (
     <div
-      className="reveal flex justify-center p-5  h-[600px] "
+      className="reveal flex justify-center p-5 h-[600px] sm:p-0 "
       id={idComponent}
     >
       <div className="flex w-4/5 xl:w-full md:justify-center">
