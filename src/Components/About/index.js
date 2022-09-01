@@ -26,7 +26,7 @@ function About({ status, idComponent }) {
             </p>
             <p className="mt-12">
               - Always try to improve my level to become an excellent employee
-              in my field.
+              in my field field.
             </p>
             <p className="mt-12">
               - Have a stable job that provides me the capability to learn new
