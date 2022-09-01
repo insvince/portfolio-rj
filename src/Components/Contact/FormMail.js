@@ -32,7 +32,7 @@ const ContactUs = ({ status }) => {
 
   return (
     <form
-      className="flex justify-center items-center w-3/5"
+      className="flex justify-center items-center w-3/5 md:w-[100%] md:mb-12"
       ref={form}
       onSubmit={sendEmail}
     >

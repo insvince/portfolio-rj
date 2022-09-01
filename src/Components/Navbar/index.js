@@ -1,22 +1,22 @@
 const Item = ({ title, url }) => {
   return (
-    <li className="mx-3 p-2  ease-out hover:scale-125 hover:translate-y-4 duration-500">
+    <li className="mx-3 p-2  ease-out  ">
       <a href={url}>{title}</a>
     </li>
   );
 };
 
-function Header() {
+function Navbar() {
   return (
-    <div className="flex justify-center h-[100px] mb-10">
-      <div className="flex justify-between items-center w-[80%] font-bold text-lg">
-        <span className="hover:scale-125 hover:translate-y-4 duration-500 cursor-pointer">
+    <div className="hidden justify-center h-[300px] mb-10 md:hidden">
+      <div className="flex flex-col items-center w-[80%] font-bold text-lg">
+        <span className="  cursor-pointer">
           <a href="/" rel="noreferrer">
             Cabbage
           </a>
         </span>
 
-        <ul className="flex list-none">
+        <ul className="flex flex-col list-none">
           <Item url="#home" title="Home" />
           <Item url="#about" title="About" />
           <Item url="#skills" title="Skills" />
@@ -29,4 +29,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

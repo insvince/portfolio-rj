@@ -6,8 +6,8 @@ function Skills({ status }) {
       className="reveal flex justify-center  p-[50px] min-h-[500px]"
       id="skills"
     >
-      <div className="w-4/5">
-        <h2 className="text-4xl underline text-center font-bold mt-12">
+      <div className="w-4/5 xl:w-[95%]">
+        <h2 className="text-4xl underline text-center font-bold mt-12 xl:text-3xl">
           Skills
         </h2>
         <Skill

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 import Header from "./Components/Header";
+import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
@@ -65,10 +66,11 @@ function App() {
 
   return (
     <div
-      className="bg-gradient-to-br to-sky-900 from-sky-800 text-white h-[100vh] overflow-y-scroll scroll-smooth "
+      className="bg-gradient-to-br to-sky-900 from-sky-800 text-white h-[100vh] overflow-y-scroll scroll-smooth duration-500"
       onScroll={handleReveal}
     >
       <Header />
+      <Navbar />
       <Home
         status={status.find((item) => item.id === "home")}
         idComponent="home"

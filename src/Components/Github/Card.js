@@ -1,7 +1,7 @@
 function Card({ url, name, description, language, img, source, status }) {
   return (
     <div
-      className={`w-[30%] border-solid rounded-lg shadow-2xl bg-gradient-to-br to-blue-800 from-cyan-700 text-white p-4 mt-4 mx-[18px] text-center h-[540px] ${
+      className={`w-[30%] border-solid rounded-lg shadow-2xl bg-gradient-to-br to-blue-800 from-cyan-700 text-white p-4 mt-4 mx-[18px] text-center h-[540px] duration-500 lg:w-[45%] md:w-3/5 ${
         status === "true" && "animate-translateYReverse"
       }`}
     >
@@ -12,10 +12,10 @@ function Card({ url, name, description, language, img, source, status }) {
             src={img}
             alt="logo"
           />
-          <h3 className="text-2xl font-bold  mt-5">{name}</h3>
+          <h3 className="text-2xl font-bold  mt-5 md:text-xl">{name}</h3>
         </a>
 
-        <p className=" mt-3 text-left h-[130px] overflow-hidden">
+        <p className=" mt-3 text-left h-[130px] overflow-hidden ">
           {description}
         </p>
         <p className="mt-2">

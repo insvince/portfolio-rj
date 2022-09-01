@@ -1,6 +1,6 @@
 const Item = ({ title, url }) => {
   return (
-    <li className="mx-3 p-2  ease-out hover:scale-125 hover:translate-y-4 duration-500">
+    <li className="mx-3 p-2  ease-out hover:scale-110 hover:translate-y-2 duration-500">
       <a href={url}>{title}</a>
     </li>
   );
@@ -8,9 +8,9 @@ const Item = ({ title, url }) => {
 
 function Header() {
   return (
-    <div className="flex justify-center h-[100px] mb-10">
+    <div className="flex justify-center h-[100px] mb-10 xl:h-[80px] md:hidden ">
       <div className="flex justify-between items-center w-[80%] font-bold text-lg">
-        <span className="hover:scale-125 hover:translate-y-4 duration-500 cursor-pointer">
+        <span className="duration-500 cursor-pointer">
           <a href="/" rel="noreferrer">
             Cabbage
           </a>
