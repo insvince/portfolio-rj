@@ -9,7 +9,7 @@ function Services({ status, idComponent }) {
       }`}
       id={idComponent}
     >
-      <div className="absolute text-7xl font-bold top-[50%] z-10 duration-500 xl:text-5xl ">
+      <div className="absolute text-7xl font-bold top-[50%] z-10 duration-500 xl:text-5xl sm:text-4xl ">
         Coming Soon
       </div>
       <div className="w-3/4 duration-500 xl:w-full">
@@ -17,7 +17,7 @@ function Services({ status, idComponent }) {
           Services
         </h2>
         <div className="flex justify-evenly items-center opacity-25 md:flex-col">
-          <div className="text-center bg-gradient-to-br to-blue-600 from-cyan-500 rounded-2xl h-[450px] text-black w-[30%] flex flex-col justify-start items-center duration-500  xl:h-[400px] xl:w-[28%]xl:px-2 md:w-[55%] md:mb-12 md:px-2">
+          <div className="text-center bg-gradient-to-br to-blue-600 from-cyan-500 rounded-2xl h-[450px] text-black w-[30%] flex flex-col justify-start items-center duration-500  xl:h-[400px] xl:w-[28%]xl:px-2 md:w-[70%] md:h-[420px] md:mb-12 md:px-2">
             <img
               className="w-[100px] py-8 xl:w-[80px]"
               src="https://images.ctfassets.net/l3bopzzawli1/1nZDHo6PA7SpTQq4VECOhT/ce782df920e48a114e3aa6e7668150d6/service-ux.svg"
@@ -48,7 +48,7 @@ function Services({ status, idComponent }) {
             </div>
           </div>
 
-          <div className="text-center bg-gradient-to-br to-blue-600 from-cyan-500 rounded-2xl h-[450px] text-black w-[30%] flex flex-col justify-start items-center duration-500  xl:h-[400px] xl:w-[28%]xl:px-2 md:w-[55%] md:mb-12 md:px-2">
+          <div className="text-center bg-gradient-to-br to-blue-600 from-cyan-500 rounded-2xl h-[450px] text-black w-[30%] flex flex-col justify-start items-center duration-500  xl:h-[400px] xl:w-[28%]xl:px-2 md:w-[70%] md:h-[420px] md:mb-12 md:px-2">
             <img
               className="w-[100px] py-8 xl:w-[80px]"
               src="https://images.ctfassets.net/l3bopzzawli1/4Dfr9VTehS5OlKVv8GVzOB/113e4c884590fc58009099448edc02e5/service-ui.svg"
@@ -79,7 +79,7 @@ function Services({ status, idComponent }) {
             </div>
           </div>
 
-          <div className="text-center bg-gradient-to-br to-blue-600 from-cyan-500 rounded-2xl h-[450px] text-black w-[30%] flex flex-col justify-start items-center duration-500  xl:h-[400px] xl:w-[28%]xl:px-2 md:w-[55%] md:mb-12 md:px-2">
+          <div className="text-center bg-gradient-to-br to-blue-600 from-cyan-500 rounded-2xl h-[450px] text-black w-[30%] flex flex-col justify-start items-center duration-500  xl:h-[400px] xl:w-[28%]xl:px-2 md:w-[70%] md:h-[420px] md:mb-12 md:px-2">
             <img
               className="w-[100px] py-8 xl:w-[80px]"
               src="https://images.ctfassets.net/l3bopzzawli1/4zMCq0MxSCCXOnUqZHc6Re/42a0be5daa02968f7c8de5786f9df226/service-brand.svg"

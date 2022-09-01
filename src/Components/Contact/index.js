@@ -11,16 +11,16 @@ import ContactUs from "./FormMail";
 function Contact({ status, idComponent }) {
   return (
     <div
-      className=" reveal flex justify-center h-[700px] p-12"
+      className=" reveal flex justify-center h-[700px] p-12 sm:p-2"
       id={idComponent}
     >
       <div className="w-3/4 xl:w-full">
         <h2 className="text-4xl font-bold underline text-center mb-12 xl:text-3xl">
           Contact
         </h2>
-        <div className="flex justify-between items-start md:flex-col-reverse md:items-center md:mb-24">
+        <div className="flex justify-between items-start md:flex-col-reverse md:items-center md:mb-16">
           <div
-            className={`w-2/5 md:w-[80%]  ${
+            className={`w-2/5 md:w-[80%] sm:mb-12  ${
               status.animate === "true" && "animate-translateX"
             }`}
           >

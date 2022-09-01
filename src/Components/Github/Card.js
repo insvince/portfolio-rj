@@ -1,14 +1,14 @@
 function Card({ url, name, description, language, img, source, status }) {
   return (
     <div
-      className={`w-[30%] border-solid rounded-lg shadow-2xl bg-gradient-to-br to-blue-800 from-cyan-700 text-white p-4 mt-4 mx-[18px] text-center h-[540px] duration-500 lg:w-[45%] md:w-3/5 ${
+      className={`w-[30%] border-solid rounded-lg shadow-2xl bg-gradient-to-br to-blue-800 from-cyan-700 text-white p-4 mt-4 mx-[18px] text-center h-[540px] duration-500 lg:w-[45%] md:w-3/5 sm:w-[70%] sm:h-[500px] sm:mb-8 ${
         status === "true" && "animate-translateYReverse"
       }`}
     >
       <div>
         <a href={url} target="_blank" rel="noreferrer">
           <img
-            className="w-[350px] h-[250px] object-cover hover:scale-75 duration-500"
+            className="w-[350px] h-[250px] object-cover hover:scale-75 duration-500 sm:h-[180px] "
             src={img}
             alt="logo"
           />
@@ -28,7 +28,7 @@ function Card({ url, name, description, language, img, source, status }) {
             Link Source
           </a>
         </p>
-        <div className="flex justify-between items-center  p-2">
+        <div className="flex justify-between items-center p-2 sm:mt-4">
           <p className="font-semibold">{language}</p>
           <img
             className="w-8 rounded-full"
