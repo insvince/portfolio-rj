@@ -70,7 +70,7 @@ function App() {
       onScroll={handleReveal}
     >
       <Header />
-      <Navbar />
+      {/* <Navbar /> */}
       <Home
         status={status.find((item) => item.id === "home")}
         idComponent="home"
