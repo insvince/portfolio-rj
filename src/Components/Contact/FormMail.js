@@ -4,10 +4,6 @@ import emailjs from "@emailjs/browser";
 const ContactUs = ({ status }) => {
   const form = useRef();
 
-  const resultText = (text) => {
-    document.querySelector(".result").textContent = text;
-  };
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,11 +16,13 @@ const ContactUs = ({ status }) => {
       )
       .then(
         (result) => {
-          resultText(`Send ${result.text}`);
+          document.querySelector(".result").textContent = result.text;
 
           console.log(result.text);
         },
         (error) => {
+          document.querySelector(".result").textContent = error.text;
+
           console.log(error.text);
         }
       );
@@ -41,7 +39,7 @@ const ContactUs = ({ status }) => {
           status === "true" && "animate-translateXReverse"
         }`}
       >
-        <div className=" mt-5  font-semibold text-left w-full">
+        <div className="mt-5 font-semibold text-left w-full">
           <input
             className="text-black w-full p-3 pl-3  rounded-lg "
             type="text"
@@ -50,7 +48,7 @@ const ContactUs = ({ status }) => {
           />
         </div>
 
-        <div className=" mt-5  font-semibold text-left w-full">
+        <div className="mt-5 font-semibold text-left w-full">
           <input
             className="text-black w-full p-3 pl-3  rounded-lg "
             type="email"
@@ -59,7 +57,7 @@ const ContactUs = ({ status }) => {
           />
         </div>
 
-        <div className=" mt-5  font-semibold text-left w-full">
+        <div className="mt-5 font-semibold text-left w-full">
           <textarea
             className="p-3 pt-3 pl-3 text-black w-full h-[150px] rounded-lg"
             name="message"
@@ -68,11 +66,12 @@ const ContactUs = ({ status }) => {
         </div>
         <div className="text-right w-full relative">
           <input
-            className=" rounded-lg bg-blue-700 mt-12 w-[150px] h-12 font-bold  shadow-2xl cursor-pointer"
+            className="rounded-lg bg-blue-700 mt-12 w-[150px] h-12 font-bold  shadow-2xl cursor-pointer"
             type="submit"
             value="Send"
           />
-          <div className="result absolute bottom-0 w-[150px] h-12 text-center flex items-center justify-center font-bold text-lime-400 text-xl"></div>
+
+          <div className="result absolute bottom-0 w-[150px] h-12 text-center flex items-center justify-center font-bold text-lime-400 text-xl" />
         </div>
       </div>
     </form>

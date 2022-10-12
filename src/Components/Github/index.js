@@ -27,15 +27,6 @@ function Github({ status, idComponent }) {
             img="./assets/images/music-player.png"
             status={status.animate}
           />
-          <Card
-            url="https://git-cabbage.github.io/music-player-v1/"
-            source="https://github.com/git-cabbage/music-player-v1/"
-            name="Music Player"
-            language="React, TailwindCSS, JSON"
-            description="Online music player application on web browser. Includes functions such as: play music, select song, stop, next song, random song,..."
-            img="./assets/images/music-player.png"
-            status={status.animate}
-          />
         </div>
       </div>
     </div>
