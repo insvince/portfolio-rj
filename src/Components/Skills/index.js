@@ -17,12 +17,6 @@ function Skills({ status }) {
           status={status.animate}
         />
         <Skill
-          url="./assets/images/redux.png"
-          name="redux"
-          percent="40"
-          status={status.animate}
-        />
-        <Skill
           url="./assets/images/nodejs.png"
           name="nodejs"
           percent="65"
@@ -43,7 +37,7 @@ function Skills({ status }) {
         <Skill
           url="./assets/images/html5.png"
           name="html5"
-          percent="80"
+          percent="90"
           status={status.animate}
         />
         <Skill

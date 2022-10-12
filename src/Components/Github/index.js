@@ -3,11 +3,11 @@ import Card from "./Card";
 function Github({ status, idComponent }) {
   return (
     <div className="reveal flex justify-center min-h-[750px] " id={idComponent}>
-      <div className="w-3/4 duration-500 xl:w-full lg:w-full ">
+      <div className=" duration-500 w-[90%] xl:w-full ">
         <h2 className="text-4xl font-bold underline text-center mb-12 mt-5 xl:text-3xl">
           Github
         </h2>
-        <div className="flex justify-start items-center flex-wrap md:flex-col">
+        <div className="flex justify-start items-center flex-wrap lg:justify-center md:flex-col">
           <Card
             url="https://git-cabbage.github.io/portfolio-rj/"
             source="https://github.com/git-cabbage/portfolio-rj/"
@@ -18,6 +18,15 @@ function Github({ status, idComponent }) {
             status={status.animate}
           />
 
+          <Card
+            url="https://git-cabbage.github.io/music-player-v1/"
+            source="https://github.com/git-cabbage/music-player-v1/"
+            name="Music Player"
+            language="React, TailwindCSS, JSON"
+            description="Online music player application on web browser. Includes functions such as: play music, select song, stop, next song, random song,..."
+            img="./assets/images/music-player.png"
+            status={status.animate}
+          />
           <Card
             url="https://git-cabbage.github.io/music-player-v1/"
             source="https://github.com/git-cabbage/music-player-v1/"

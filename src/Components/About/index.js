@@ -1,5 +1,4 @@
 function About({ status, idComponent }) {
-  console.log(status.animate === "true");
   return (
     <div
       className="reveal flex justify-center p-5 h-[600px] sm:p-0 "
@@ -42,7 +41,7 @@ function About({ status, idComponent }) {
           } `}
         >
           <img
-            className="h-[450px] lg:h-[250px]"
+            className="h-[450px] duration-500 lg:h-[250px]"
             src="./assets/images/me-reverse.png"
             alt="myself"
           />

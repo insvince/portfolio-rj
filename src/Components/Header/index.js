@@ -6,17 +6,21 @@ const Item = ({ title, url }) => {
   );
 };
 
-function Header() {
+function Header({ status, hover }) {
   return (
-    <div className="flex justify-center h-[100px] mb-10 xl:h-[80px] md:hidden ">
+    <div
+      className={`sticky top-0 flex justify-center h-[100px] mb-10 duration-1000 z-20 xl:h-[60px] md:hidden ${
+        status.animate === "true" && "bg-white text-black h-[60px]"
+      }`}
+    >
       <div className="flex justify-between items-center w-[80%] font-bold text-lg">
-        <span className="duration-500 cursor-pointer">
+        <span className="duration-500 cursor-pointer lg:hidden">
           <a href="/" rel="noreferrer">
             Cabbage
           </a>
         </span>
 
-        <ul className="flex list-none">
+        <ul className="flex list-none lg:flex-1 lg:justify-center">
           <Item url="#home" title="Home" />
           <Item url="#about" title="About" />
           <Item url="#skills" title="Skills" />

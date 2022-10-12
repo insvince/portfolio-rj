@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import ContactUs from "./FormMail";
+import Copyright from "./../Copyright/index";
 
 function Contact({ status, idComponent }) {
   return (
@@ -62,6 +63,7 @@ function Contact({ status, idComponent }) {
 
           <ContactUs status={status.animate} />
         </div>
+        <Copyright />
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ import Services from "./Components/Services";
 import Contact from "./Components/Contact";
 import Github from "./Components/Github";
 import "./App.scss";
+import { useReducer } from "react";
 
 function App() {
   const defaultArr = [
@@ -66,31 +67,38 @@ function App() {
 
   return (
     <div
-      className="bg-gradient-to-br to-sky-900 from-sky-800 text-white h-[100vh] overflow-y-scroll scroll-smooth duration-500"
+      className="app bg-gradient-to-br to-sky-900 from-sky-800 text-white h-[100vh] overflow-y-scroll scroll-smooth duration-500"
+      id="app"
       onScroll={handleReveal}
     >
-      <Header />
+      <Header status={status.find((item) => item.id === "about")} />
+
       {/* <Navbar /> */}
       <Home
         status={status.find((item) => item.id === "home")}
         idComponent="home"
       />
+
       <About
         status={status.find((item) => item.id === "about")}
         idComponent="about"
       />
+
       <Skills
         status={status.find((item) => item.id === "skills")}
         idComponent="skills"
       />
+
       <Github
         status={status.find((item) => item.id === "github")}
         idComponent="github"
       />
+
       <Services
         status={status.find((item) => item.id === "services")}
         idComponent="services"
       />
+
       <Contact
         status={status.find((item) => item.id === "contact")}
         idComponent="contact"
