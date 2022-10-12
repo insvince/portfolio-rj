@@ -16,14 +16,14 @@ const ContactUs = ({ status }) => {
       )
       .then(
         (result) => {
-          document.querySelector(".result").textContent = result.text;
+          document.querySelector(".result").textContent = result.status;
 
-          console.log(result.text);
+          console.log(result.status);
         },
         (error) => {
-          document.querySelector(".result").textContent = error.text;
+          document.querySelector(".result").textContent = error.status;
 
-          console.log(error.text);
+          console.log(error.status);
         }
       );
   };
