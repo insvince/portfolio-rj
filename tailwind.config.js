@@ -12,6 +12,7 @@ module.exports = {
     },
     extend: {
       animation: {
+        toastMessage: "toastMessage 1s ease, fadeOut 1s linear 4s forwards",
         translateX: "translateX 2s ease",
         translateXReverse: "translateXReverse 2s ease",
         translateY: "translateY 2s ease",
@@ -21,6 +22,13 @@ module.exports = {
         progess: "progess 2s ease-in-out",
       },
       keyframes: {
+        toastMessage: {
+          from: { transform: "translateX(500px)", opacity: 0.1 },
+          to: { transform: "translateX(0px)", opacity: 1 },
+        },
+        fadeOut: {
+          to: { opacity: 0 },
+        },
         translateX: {
           "0%": { transform: "translateX(-300px)", opacity: 0.1 },
           "50%": { transform: "translateX(30px)", opacity: 0.4 },

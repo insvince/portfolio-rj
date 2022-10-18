@@ -1,12 +1,12 @@
 const Item = ({ title, url }) => {
   return (
-    <li className="mx-3 p-2  ease-out hover:scale-110 hover:translate-y-2 duration-500">
+    <li className="mx-3 p-2 ease-out hover:scale-110 hover:text-black duration-500">
       <a href={url}>{title}</a>
     </li>
   );
 };
 
-function Header({ status, hover }) {
+function Header({ status }) {
   return (
     <div
       className={`sticky top-0 flex justify-center h-[100px] mb-10 duration-1000 z-20 xl:h-[60px] md:hidden ${

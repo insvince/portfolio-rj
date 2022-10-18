@@ -1,29 +1,51 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastMessage } from "../ToastMessage";
 
 const ContactUs = ({ status }) => {
   const form = useRef();
+
+  const [listToast, setListToast] = useState([]);
+  let toastProperties = null;
+
+  const showToast = (type) => {
+    type === 200
+      ? (toastProperties = {
+          id: listToast.length + 1,
+          title: "Success",
+          border: "border-lime-500",
+          color: "text-lime-500",
+          description: "Oke, Your email has been sent.",
+        })
+      : (toastProperties = {
+          id: listToast.length + 1,
+          title: "Error",
+          border: "border-red-500",
+          color: "text-red-500",
+          description: "Sorry, Your mail or form problem.",
+        });
+
+    setListToast([...listToast, toastProperties]);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "service_2928399",
-        "template_7j95yd9",
+        "service_d8lrwug",
+        "template_7j95yd9s",
         form.current,
         "-a9QY_SRgjNtDAEmV"
       )
       .then(
         (result) => {
-          document.querySelector(".result").textContent = result.status;
-
+          showToast(result.status);
           console.log(result.status);
         },
         (error) => {
-          document.querySelector(".result").textContent = error.status;
-
-          console.log(error.status);
+          showToast(error.status);
+          console.log(error.staus);
         }
       );
   };
@@ -41,39 +63,47 @@ const ContactUs = ({ status }) => {
       >
         <div className="mt-5 font-semibold text-left w-full">
           <input
+            ref={form}
             className="text-black w-full p-3 pl-3  rounded-lg "
             type="text"
             name="user_name"
             placeholder="Full Name"
+            required
           />
         </div>
 
         <div className="mt-5 font-semibold text-left w-full">
           <input
+            ref={form}
             className="text-black w-full p-3 pl-3  rounded-lg "
             type="email"
             name="user_email"
             placeholder="Email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
           />
         </div>
 
         <div className="mt-5 font-semibold text-left w-full">
           <textarea
+            ref={form}
             className="p-3 pt-3 pl-3 text-black w-full h-[150px] rounded-lg"
             name="message"
             placeholder="Message"
+            required
           />
         </div>
-        <div className="text-right w-full relative">
+
+        <div className="text-right w-full">
           <input
             className="rounded-lg bg-blue-700 mt-12 w-[150px] h-12 font-bold  shadow-2xl cursor-pointer"
             type="submit"
             value="Send"
           />
-
-          <div className="result absolute bottom-0 w-[150px] h-12 text-center flex items-center justify-center font-bold text-lime-400 text-xl" />
         </div>
       </div>
+
+      <ToastMessage listToast={listToast} setListToast={setListToast} />
     </form>
   );
 };
