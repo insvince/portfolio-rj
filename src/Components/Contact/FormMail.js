@@ -34,7 +34,7 @@ const ContactUs = ({ status }) => {
     emailjs
       .sendForm(
         "service_d8lrwug",
-        "template_7j95yd9s",
+        "template_7j95yd9",
         form.current,
         "-a9QY_SRgjNtDAEmV"
       )
