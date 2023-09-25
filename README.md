@@ -1,3 +1,3 @@
-PORTFOLIO PERSONAL - Landing Page
+Portfolio Personal - Landing Page
 
-Vince
+Vince - Thanks for visited
