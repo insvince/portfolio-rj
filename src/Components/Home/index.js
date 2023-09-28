@@ -16,7 +16,7 @@ function Home() {
                 <ul className="w-1/10 text-3xl mx-4  animate-translateX md:hidden">
                     <li className="my-5 cursor-pointer hover:scale-110 duration-500 hover:-translate-x-4">
                         <a
-                            href="https://github.com/git-cabbage"
+                            href="https://github.com/insvince"
                             target="_blank"
                             rel="noreferrer">
                             <FontAwesomeIcon icon={faGithub} />
@@ -25,7 +25,7 @@ function Home() {
 
                     <li className="my-5 cursor-pointer hover:scale-110 duration-500 hover:-translate-x-4">
                         <a
-                            href="https://www.facebook.com/fb.cabbage"
+                            href="https://www.facebook.com/fb.insvince"
                             target="_blank"
                             rel="noreferrer">
                             <FontAwesomeIcon icon={faFacebook} />
