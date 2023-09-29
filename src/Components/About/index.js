@@ -5,7 +5,7 @@ function About({ status, idComponent }) {
             id={idComponent}>
             <div className="flex w-4/5 xl:w-full md:justify-center overflow-hidden">
                 <div
-                    className={`flex flex-col justify-center w-2/4 duration-500 md:w-[80%] sm:w-[90%] ${
+                    className={`flex flex-col justify-center w-2/4 duration-500 md:w-[80%] sm:w-[90%]  ${
                         status.animate === 'true' && 'animate-translateX'
                     }`}>
                     <h2 className="text-4xl font-bold text-center underline xl:text-3xl">

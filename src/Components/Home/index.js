@@ -10,10 +10,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Home() {
     return (
         <div
-            className="reveal flex justify-center relative min-h-[650px] sm:mb-12 sm:flex-col"
+            className="reveal flex justify-center relative min-h-[650px] sm:mb-12 sm:flex-col overflow-hidden"
             id="home">
             <div className="flex justify-evenly items-center w-4/5 xl:w-[95%] md:w-[100%] ">
-                <ul className="w-1/10 text-3xl mx-4  animate-translateX md:hidden">
+                <ul className="w-1/10 text-3xl mx-4  animate-translateX  md:hidden ">
                     <li className="my-5 cursor-pointer hover:scale-110 duration-500 hover:-translate-x-4">
                         <a
                             href="https://github.com/insvince"
@@ -45,7 +45,7 @@ function Home() {
                 </ul>
 
                 <div className="flex justify-around items-center flex-1 sm:flex-col">
-                    <div className="w-2/5 flex justify-center rounded-full overflow-hidden animate-translateX sm:h-[220px] sm:w-[220px] sm:mb-[50px] sm:mt-[100px]">
+                    <div className="w-2/5 flex justify-center rounded-full animate-translateX sm:h-[220px] sm:w-[220px] sm:mb-[50px] sm:mt-[100px]">
                         <img
                             className="h-[300px] hover:scale-110 duration-500 animate-swimming lg:h-[220px] md:h-[160px] sm:h-[200px] "
                             // src="./assets/images/me2.png"
