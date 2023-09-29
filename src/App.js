@@ -3,14 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 import Header from './Components/Header';
-// import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
 import Skills from './Components/Skills';
-import Services from './Components/Services';
 import Contact from './Components/Contact';
 import Github from './Components/Github';
 import './App.scss';
+// import Navbar from './Components/Navbar';
+// import Services from './Components/Services';
 
 function App() {
     const defaultArr = [
@@ -66,7 +66,7 @@ function App() {
 
     return (
         <div
-            className="app bg-gradient-to-br to-sky-900 from-sky-800 text-white h-[100vh] 
+            className="app bg-gradient-to-br from-sky-900 to-cyan-600 text-white h-[100vh] 
             overflow-y-scroll scroll-smooth duration-500"
             id="app"
             onScroll={handleReveal}>
@@ -93,10 +93,10 @@ function App() {
                 idComponent="github"
             />
 
-            <Services
+            {/*   <Services
                 status={status.find(item => item.id === 'services')}
                 idComponent="services"
-            />
+            /> */}
 
             <Contact
                 status={status.find(item => item.id === 'contact')}

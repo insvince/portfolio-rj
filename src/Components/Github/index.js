@@ -9,7 +9,7 @@ function Github({ status, idComponent }) {
                 <h2 className="text-4xl font-bold underline text-center mb-12 mt-5 xl:text-3xl">
                     Github
                 </h2>
-                <div className="flex justify-start items-center flex-wrap lg:justify-center md:flex-col">
+                <div className="flex justify-start items-center flex-wrap lg:justify-center md:flex-col mb-[200px]">
                     <Card
                         url="https://portfolio-rj.vercel.app/"
                         source="https://github.com/insvince/portfolio-rj/"
@@ -44,7 +44,7 @@ function Github({ status, idComponent }) {
                         name="Crud Api"
                         language="Javascript, Nodejs, Express, MongoDB"
                         description="Author & Book include feature: create, update, remove,..."
-                        img="./assets/images/nodejs.png"
+                        img="./assets/images/crud_api.png"
                         status={status.animate}
                     />
                 </div>

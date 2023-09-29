@@ -1,6 +1,6 @@
 const Item = ({ title, url }) => {
     return (
-        <li className="mx-3 p-2 ease-out hover:scale-110 hover:text-black duration-500">
+        <li className="mx-3 p-2 ease-out hover:scale-110 duration-500">
             <a href={url}>{title}</a>
         </li>
     );
@@ -9,8 +9,9 @@ const Item = ({ title, url }) => {
 function Header({ status }) {
     return (
         <div
-            className={`sticky top-0 flex justify-center h-[100px] mb-10 duration-1000 z-20 xl:h-[60px] md:hidden ${
-                status.animate === 'true' && 'bg-white text-black h-[60px]'
+            className={`sticky top-0 flex justify-center h-[100px] mb-10 duration-1000 z-20 
+            xl:h-[60px] md:hidden ${
+                status.animate === 'true' && 'bg-stone-900  h-[60px]'
             }`}>
             <div className="flex justify-between items-center w-[80%] font-bold text-lg">
                 <span className="duration-500 cursor-pointer lg:hidden">

@@ -3,7 +3,7 @@ import Skill from './Skill';
 function Skills({ status }) {
     return (
         <div
-            className="reveal flex justify-center  p-[50px] min-h-[500px] sm:p-4"
+            className="reveal flex justify-center  p-[50px] min-h-[500px] overflow-hidden sm:p-4"
             id="skills">
             <div className="w-4/5 xl:w-[95%] sm:w-full">
                 <h2 className="text-4xl underline text-center font-bold mt-12 xl:text-3xl">
