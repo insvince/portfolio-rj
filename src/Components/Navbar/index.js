@@ -21,7 +21,7 @@ function Header() {
                     <Item url="#about" title="About" />
                     <Item url="#skills" title="Skills" />
                     <Item url="#github" title="Github" />
-                    <Item url="#services" title="Services" />
+                    {/* <Item url="#services" title="Services" /> */}
                     <Item url="#contact" title="Contact" />
                 </ul>
             </div>

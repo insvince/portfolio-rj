@@ -12,7 +12,7 @@ import Copyright from './../Copyright/index';
 function Contact({ status, idComponent }) {
     return (
         <div
-            className=" reveal flex justify-center h-[700px] p-12  sm:p-2"
+            className=" reveal flex justify-center h-[700px] p-12 pt-14 md:h-[1200px]  sm:p-2"
             id={idComponent}>
             <div className="w-3/4 xl:w-full md:w-4/5">
                 <h2 className="text-4xl font-bold underline text-center mb-12 xl:text-3xl">
@@ -20,7 +20,7 @@ function Contact({ status, idComponent }) {
                 </h2>
                 <div className="flex justify-between items-start md:flex-col-reverse md:items-center md:mb-16">
                     <div
-                        className={`w-2/5 md:w-[80%] sm:mb-12 overflow-hidden  ${
+                        className={`w-2/5 md:w-[80%] sm:mb-12  ${
                             status.animate === 'true' && 'animate-translateX'
                         }`}>
                         <h2 className=" text-2xl font-bold ">Get in touch</h2>

@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Home() {
     return (
         <div
-            className="reveal flex justify-center relative min-h-[650px] sm:mb-12 sm:flex-col overflow-hidden"
+            className="reveal flex justify-center relative min-h-[650px] mb-10 sm:mb-12 sm:flex-col overflow-hidden"
             id="home">
             <div className="flex justify-evenly items-center w-4/5 xl:w-[95%] md:w-[100%] ">
                 <ul className="w-1/10 text-3xl mx-4  animate-translateX  md:hidden ">
@@ -75,7 +75,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="absolute bottom-0  text-2xl sm:hidden">
+            <div id="about" className="absolute bottom-0 text-2xl sm:hidden">
                 <span>Scroll Down</span>
                 <FontAwesomeIcon
                     className="ml-4 animate-bounce"

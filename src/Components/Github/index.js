@@ -3,7 +3,7 @@ import Card from './Card';
 function Github({ status, idComponent }) {
     return (
         <div
-            className="reveal flex justify-center min-h-[750px] "
+            className="reveal flex justify-center min-h-[750px] pt-[100px]"
             id={idComponent}>
             <div className=" duration-500 w-[90%] xl:w-full ">
                 <h2 className="text-4xl font-bold underline text-center mb-12 mt-5 xl:text-3xl">
