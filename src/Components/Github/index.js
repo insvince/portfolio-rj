@@ -11,6 +11,15 @@ function Github({ status, idComponent }) {
                 </h2>
                 <div className="flex justify-start items-center flex-wrap lg:justify-center md:flex-col mb-[200px]">
                     <Card
+                        url="https://github.com/insvince/bunny_book_store"
+                        source="https://github.com/insvince/bunny_book_store"
+                        name="Buny Book Store"
+                        language="PHP, Javascript, MySQL"
+                        description="This is the graduation product of our group during their studies at college specializing in information technology."
+                        img="https://github.com/insvince/Bunny_Book_Store/blob/master/public/img/logo.png"
+                        status={status.animate}
+                    />
+                    <Card
                         url="https://portfolio-rj.vercel.app/"
                         source="https://github.com/insvince/portfolio-rj/"
                         name="Portfolio Personal"
