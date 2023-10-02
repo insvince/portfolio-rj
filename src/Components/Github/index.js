@@ -16,7 +16,7 @@ function Github({ status, idComponent }) {
                         name="Buny Book Store"
                         language="PHP, Javascript, MySQL"
                         description="This is the graduation product of our group during their studies at college specializing in information technology."
-                        img="https://github.com/insvince/Bunny_Book_Store/blob/master/public/img/logo.png"
+                        img="./assets/images/bunny_book.png"
                         status={status.animate}
                     />
                     <Card
