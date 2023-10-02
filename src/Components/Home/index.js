@@ -48,7 +48,7 @@ function Home() {
                     <div className="w-2/5 flex justify-center rounded-full animate-translateX sm:h-[220px] sm:w-[220px] sm:mb-[50px] sm:mt-[100px]">
                         <img
                             className="h-[300px] hover:scale-110 duration-500 animate-swimming lg:h-[220px] md:h-[160px] sm:h-[200px] "
-                            // src="./assets/images/me2.png"
+                            src="./assets/images/me2.png"
                             alt="myself"
                         />
                     </div>

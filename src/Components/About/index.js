@@ -40,7 +40,7 @@ function About({ status, idComponent }) {
                     } `}>
                     <img
                         className="h-[450px] duration-500 lg:h-[250px]"
-                        // src="./assets/images/me-reverse.png"
+                        src="./assets/images/me-reverse.png"
                         alt="myself"
                     />
                 </div>
