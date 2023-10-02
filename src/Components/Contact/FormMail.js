@@ -24,28 +24,29 @@ const ContactUs = ({ status }) => {
                   color: 'text-red-500',
                   description: 'Sorry, Your mail or form problem.',
               });
-
         setListToast([...listToast, toastProperties]);
     };
 
     const sendEmail = e => {
         e.preventDefault();
 
+        if (listToast.length > 4) {
+            return e.preventDefault();
+        }
+
         emailjs
             .sendForm(
                 'service_d8lrwug',
-                'template_7j95yd9',
+                'template_u6ezqbb',
                 form.current,
                 '-a9QY_SRgjNtDAEmV',
             )
             .then(
                 result => {
                     showToast(result.status);
-                    console.log(result.status);
                 },
                 error => {
                     showToast(error.status);
-                    console.log(error.staus);
                 },
             );
     };

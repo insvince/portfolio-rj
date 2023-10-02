@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faX } from '@fortawesome/free-solid-svg-icons';
 
 export const ToastMessage = ({ listToast, setListToast }) => {
-    console.log(listToast);
-
     const handleRemoveToast = useCallback(
         id => {
             const toastListItem = listToast.filter(e => e.id !== id);
@@ -15,10 +13,10 @@ export const ToastMessage = ({ listToast, setListToast }) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (listToast.length) {
+            if (listToast.length > 0) {
                 handleRemoveToast(listToast[0].id);
             }
-        }, 5000);
+        }, 2000);
 
         return () => {
             clearInterval(interval);

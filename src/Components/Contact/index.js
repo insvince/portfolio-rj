@@ -52,7 +52,8 @@ function Contact({ status, idComponent }) {
                             <div>
                                 <FontAwesomeIcon icon={faLocationDot} />
                                 <span className="font-semibold text-lg ml-5 xl:text-base">
-                                    Hau Giang Street, Ward 12, Distric 6, HCMC
+                                    Huong Lo 2 Street, Binh Tri Dong A Ward,
+                                    Binh Tan District, HCMC
                                 </span>
                             </div>
                             <div className="mt-5 font-semibold">
