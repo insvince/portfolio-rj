@@ -39,8 +39,8 @@ function Github({ status, idComponent }) {
                         status={status.animate}
                     />
                     <Card
-                        name="Comming Soon"
-                        description="Comming Soon"
+                        name="Coming Soon"
+                        description="Coming Soon"
                         img="./assets/images/soon.jpg"
                         status={status.animate}
                     />
