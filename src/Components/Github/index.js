@@ -39,14 +39,20 @@ function Github({ status, idComponent }) {
                         status={status.animate}
                     />
                     <Card
-                        url="https://crud-api-azure.vercel.app"
-                        source="https://github.com/insvince/crud_api"
-                        name="Crud Api"
-                        language="Javascript, Nodejs, Express, MongoDB"
-                        description="Author & Book include feature: create, update, remove,..."
-                        img="./assets/images/crud_api.png"
+                        name="Comming Soon"
+                        description="Comming Soon"
+                        img="./assets/images/soon.jpg"
                         status={status.animate}
                     />
+                    {/*  <Card
+                        url="https://crud-api-azure.vercel.app"
+                        source="https://github.com/insvince/crud_api"
+                        name="RestfulAPI App"
+                        language="Javascript, Nodejs, Express, MongoDB"
+                        description="Custom collection, record author & book include feature medthod: create, update, remove, ...data"
+                        img="./assets/images/crud_api.png"
+                        status={status.animate}
+                    /> */}
                 </div>
             </div>
         </div>

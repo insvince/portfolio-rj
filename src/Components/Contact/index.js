@@ -12,7 +12,7 @@ import Copyright from './../Copyright/index';
 function Contact({ status, idComponent }) {
     return (
         <div
-            className=" reveal flex justify-center h-[700px] p-12 pt-14 md:h-[1200px]  sm:p-2"
+            className=" reveal flex justify-center h-[700px] p-12 pt-14 sm:p-2"
             id={idComponent}>
             <div className="w-3/4 xl:w-full md:w-4/5">
                 <h2 className="text-4xl font-bold underline text-center mb-12 xl:text-3xl">

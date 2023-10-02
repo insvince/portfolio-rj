@@ -53,7 +53,7 @@ const ContactUs = ({ status }) => {
 
     return (
         <form
-            className="flex justify-center items-center w-3/5 md:w-[100%] md:mb-12 overflow-hidden"
+            className="flex justify-center items-center w-3/5 md:w-[100%] md:hidden overflow-hidden"
             ref={form}
             onSubmit={sendEmail}>
             <div
