@@ -11,15 +11,6 @@ function Github({ status, idComponent }) {
                 </h2>
                 <div className="flex justify-start items-center flex-wrap lg:justify-center md:flex-col mb-[200px]">
                     <Card
-                        url="https://github.com/insvince/bunny_book_store"
-                        source="https://github.com/insvince/bunny_book_store"
-                        name="Buny Book Store"
-                        language="PHP, Javascript, MySQL"
-                        description="This is the graduation product of our group during their studies at college specializing in information technology."
-                        img="./assets/images/bunny_book.png"
-                        status={status.animate}
-                    />
-                    <Card
                         url="https://portfolio-rj.vercel.app/"
                         source="https://github.com/insvince/portfolio-rj/"
                         name="Portfolio Personal"
@@ -48,20 +39,30 @@ function Github({ status, idComponent }) {
                         status={status.animate}
                     />
                     <Card
+                        url="https://github.com/insvince/fashionshop"
+                        source="https://github.com/insvince/fashionshop"
+                        name="Fashion Shop"
+                        language="Javascript, PHP, HTML5 & CSS3"
+                        description=""
+                        img="./assets/images/fashion_shop.png"
+                        status={status.animate}
+                    />
+                    <Card
+                        url="https://github.com/insvince/bunny_book_store"
+                        source="https://github.com/insvince/bunny_book_store"
+                        name="Buny Book Store"
+                        language="PHP, Javascript, MySQL"
+                        description="This is the graduation product of our group during their studies at college specializing in information technology."
+                        img="./assets/images/bunny_book_store.png"
+                        status={status.animate}
+                    />
+
+                    <Card
                         name="Coming Soon"
                         description="Coming Soon"
                         img="./assets/images/soon.jpg"
                         status={status.animate}
                     />
-                    {/*  <Card
-                        url="https://crud-api-azure.vercel.app"
-                        source="https://github.com/insvince/crud_api"
-                        name="RestfulAPI App"
-                        language="Javascript, Nodejs, Express, MongoDB"
-                        description="Custom collection, record author & book include feature medthod: create, update, remove, ...data"
-                        img="./assets/images/crud_api.png"
-                        status={status.animate}
-                    /> */}
                 </div>
             </div>
         </div>

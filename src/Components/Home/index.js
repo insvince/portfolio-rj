@@ -59,17 +59,18 @@ function Home() {
                             aria-hidden="true"
                         />
                         <p className="mt-5 w-[460px] text-lg duration-500 xl:text-base xl:w-[400px] md:w-[80%] sm:mt-12">
-                            - I like to learn new technologies and love the
-                            Javascript language.
+                            - Hello! I am very passionate about learning new
+                            technology and love the Javascript language.
                         </p>
                         <p className="mt-5 w-[460px] text-lg duration-500 xl:text-base xl:w-[400px] md:w-[80%] sm:mt-12">
-                            - Quickly adapt to new environments, not afraid of
-                            difficulties, and like to find ways to solve
-                            problems.
+                            - It's great to be adaptable and not afraid of
+                            difficulties because it helps me find solutions to
+                            any problems that may arise while programming.
                         </p>
                         <p className="mt-5 w-[460px] text-lg duration-500 xl:text-base xl:w-[400px] md:w-[80%] sm:mt-12">
-                            - Desire to gain experience working in a
-                            professional environment.
+                            - I'm sure you'll do well in a professional
+                            environment and get the experience you're looking
+                            for.
                         </p>
                     </div>
                 </div>
