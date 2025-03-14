@@ -12,8 +12,7 @@ module.exports = {
         },
         extend: {
             animation: {
-                toastMessage:
-                    'toastMessage 0.3s ease, fadeOut 10s linear 10s forwards',
+                toastMessage: 'toastMessage 0.3s ease, fadeOut 10s linear 10s forwards',
                 translateX: 'translateX 2s ease',
                 translateXReverse: 'translateXReverse 2s ease',
                 translateY: 'translateY 2s ease',

@@ -2,13 +2,9 @@ import Card from './Card';
 
 function Github({ status, idComponent }) {
     return (
-        <div
-            className="reveal flex justify-center min-h-[750px] pt-[100px]"
-            id={idComponent}>
+        <div className="reveal flex justify-center min-h-[750px] pt-[100px]" id={idComponent}>
             <div className=" duration-500 w-[90%] xl:w-full ">
-                <h2 className="text-4xl font-bold underline text-center mb-12 mt-5 xl:text-3xl">
-                    Github
-                </h2>
+                <h2 className="text-4xl font-bold underline text-center mb-12 mt-5 xl:text-3xl">Github</h2>
                 <div className="flex justify-start items-center flex-wrap lg:justify-center md:flex-col mb-[200px]">
                     <Card
                         url="https://portfolio-rj.vercel.app/"
@@ -57,12 +53,7 @@ function Github({ status, idComponent }) {
                         status={status.animate}
                     />
 
-                    <Card
-                        name="Coming Soon"
-                        description="Coming Soon"
-                        img="./assets/images/soon.jpg"
-                        status={status.animate}
-                    />
+                    <Card name="Coming Soon" description="Coming Soon" img="./assets/images/soon.jpg" status={status.animate} />
                 </div>
             </div>
         </div>

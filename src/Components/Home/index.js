@@ -1,33 +1,21 @@
-import {
-    faGithub,
-    faLinkedin,
-    faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Home() {
     return (
-        <div
-            className="reveal flex justify-center relative min-h-[650px] mb-10 sm:mb-12 sm:flex-col overflow-hidden"
-            id="home">
+        <div className="reveal flex justify-center relative min-h-[650px] mb-10 sm:mb-12 sm:flex-col overflow-hidden" id="home">
             <div className="flex justify-evenly items-center w-4/5 xl:w-[95%] md:w-[100%] ">
                 <ul className="w-1/10 text-3xl mx-4  animate-translateX  md:hidden ">
                     <li className="my-5 cursor-pointer hover:scale-110 duration-500 hover:-translate-x-4">
-                        <a
-                            href="https://github.com/insvince"
-                            target="_blank"
-                            rel="noreferrer">
+                        <a href="https://github.com/insvince" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </li>
 
                     <li className="my-5 cursor-pointer hover:scale-110 duration-500 hover:-translate-x-4">
-                        <a
-                            href="https://www.facebook.com/fb.insvince"
-                            target="_blank"
-                            rel="noreferrer">
+                        <a href="https://www.facebook.com/fb.insvince" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faFacebook} />
                         </a>
                     </li>
@@ -59,18 +47,14 @@ function Home() {
                             aria-hidden="true"
                         />
                         <p className="mt-5 w-[460px] text-lg duration-500 xl:text-base xl:w-[400px] md:w-[80%] sm:mt-12">
-                            - Hello! I am very passionate about learning new
-                            technology and love the Javascript language.
+                            - Hello! I am very passionate about learning new technology and love the Javascript language.
                         </p>
                         <p className="mt-5 w-[460px] text-lg duration-500 xl:text-base xl:w-[400px] md:w-[80%] sm:mt-12">
-                            - It's great to be adaptable and not afraid of
-                            difficulties because it helps me find solutions to
-                            any problems that may arise while programming.
+                            - It's great to be adaptable and not afraid of difficulties because it helps me find solutions to any problems
+                            that may arise while programming.
                         </p>
                         <p className="mt-5 w-[460px] text-lg duration-500 xl:text-base xl:w-[400px] md:w-[80%] sm:mt-12">
-                            - I'm sure you'll do well in a professional
-                            environment and get the experience you're looking
-                            for.
+                            - I'm sure you'll do well in a professional environment and get the experience you're looking for.
                         </p>
                     </div>
                 </div>
@@ -78,10 +62,7 @@ function Home() {
 
             <div id="about" className="absolute bottom-0 text-2xl sm:hidden">
                 <span>Scroll Down</span>
-                <FontAwesomeIcon
-                    className="ml-4 animate-bounce"
-                    icon={faArrowDown}
-                />
+                <FontAwesomeIcon className="ml-4 animate-bounce" icon={faArrowDown} />
             </div>
         </div>
     );

@@ -8,7 +8,7 @@ const ContactUs = ({ status }) => {
     const [listToast, setListToast] = useState([]);
     let toastProperties = null;
 
-    const showToast = type => {
+    const showToast = (type) => {
         type === 200
             ? (toastProperties = {
                   id: listToast.length + 1,
@@ -27,39 +27,26 @@ const ContactUs = ({ status }) => {
         setListToast([...listToast, toastProperties]);
     };
 
-    const sendEmail = e => {
+    const sendEmail = (e) => {
         e.preventDefault();
 
         if (listToast.length > 4) {
             return e.preventDefault();
         }
 
-        emailjs
-            .sendForm(
-                'service_d8lrwug',
-                'template_u6ezqbb',
-                form.current,
-                '-a9QY_SRgjNtDAEmV',
-            )
-            .then(
-                result => {
-                    showToast(result.status);
-                },
-                error => {
-                    showToast(error.status);
-                },
-            );
+        emailjs.sendForm('service_d8lrwug', 'template_u6ezqbb', form.current, '-a9QY_SRgjNtDAEmV').then(
+            (result) => {
+                showToast(result.status);
+            },
+            (error) => {
+                showToast(error.status);
+            }
+        );
     };
 
     return (
-        <form
-            className="flex justify-center items-center w-3/5 md:w-[100%] md:hidden overflow-hidden"
-            ref={form}
-            onSubmit={sendEmail}>
-            <div
-                className={`flex flex-col justify-center items-start w-4/5 ${
-                    status === 'true' && 'animate-translateXReverse'
-                }`}>
+        <form className="flex justify-center items-center w-3/5 md:w-[100%] md:hidden overflow-hidden" ref={form} onSubmit={sendEmail}>
+            <div className={`flex flex-col justify-center items-start w-4/5 ${status === 'true' && 'animate-translateXReverse'}`}>
                 <div className="mt-5 font-semibold text-left w-full">
                     <input
                         ref={form}

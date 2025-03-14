@@ -26,7 +26,7 @@ function App() {
     useEffect(() => {
         let reveals = document.querySelectorAll('.reveal');
 
-        reveals.forEach(r => {
+        reveals.forEach((r) => {
             r.setAttribute('animation', false);
             r.id === 'home' && r.setAttribute('animation', true);
         });
@@ -49,10 +49,10 @@ function App() {
         handleCheck(reveals);
     };
 
-    const handleCheck = reveals => {
+    const handleCheck = (reveals) => {
         let arrayStatus = [];
 
-        reveals.forEach(reveal => {
+        reveals.forEach((reveal) => {
             arrayStatus = [
                 ...arrayStatus,
                 {
@@ -69,43 +69,30 @@ function App() {
             className="app bg-gradient-to-br from-sky-900 to-cyan-600 text-white h-[100vh] 
             overflow-y-scroll scroll-smooth duration-500"
             id="app"
-            onScroll={handleReveal}>
-            <Header status={status.find(item => item.id === 'about')} />
+            onScroll={handleReveal}
+        >
+            <Header status={status.find((item) => item.id === 'about')} />
 
             {/* <Navbar /> */}
-            <Home
-                status={status.find(item => item.id === 'home')}
-                idComponent="home"
-            />
+            <Home status={status.find((item) => item.id === 'home')} idComponent="home" />
 
-            <About
-                status={status.find(item => item.id === 'about')}
-                idComponent="about"
-            />
+            <About status={status.find((item) => item.id === 'about')} idComponent="about" />
 
-            <Skills
-                status={status.find(item => item.id === 'skills')}
-                idComponent="skills"
-            />
+            <Skills status={status.find((item) => item.id === 'skills')} idComponent="skills" />
 
-            <Github
-                status={status.find(item => item.id === 'github')}
-                idComponent="github"
-            />
+            <Github status={status.find((item) => item.id === 'github')} idComponent="github" />
 
             {/*   <Services
                 status={status.find(item => item.id === 'services')}
                 idComponent="services"
             /> */}
 
-            <Contact
-                status={status.find(item => item.id === 'contact')}
-                idComponent="contact"
-            />
+            <Contact status={status.find((item) => item.id === 'contact')} idComponent="contact" />
 
             <div
                 className="hidden bottom-40 right-20 border p-5 rounded-full h-16 w-16 
-            justify-center items-center cursor-pointer">
+            justify-center items-center cursor-pointer"
+            >
                 <FontAwesomeIcon icon={faArrowUp} />
             </div>
         </div>
